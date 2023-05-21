@@ -52,6 +52,7 @@ To follow along with this guide, you will need the following:
 ## Step 3: Set Up InfluxDB
 
 1. Access your InfluxDB instance and create a new database for storing Kafka metrics.
+![plot](./images/influxDBService_Running.png)
 
 2. Note down the connection details, including the **host**, **port**, **username**, **password**, and **database name**. These will be required to configure InfluxDB as a data source in Grafana.
 
