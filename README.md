@@ -19,7 +19,7 @@ To follow along with this guide, you will need the following:
 2. Note down the connection details, including the **service URI**, **port**, **username**, and **password**. These will be required to connect to your Kafka cluster.
 ![plot](./images/download_certificates.png)
 
-## Step 2: Connect to Aiven Kafka
+## Step 2: Produce Messages to Aiven Kafka (Local Setup) 
 
 1. Install the `kafka-python` library using the following command:
    ```
@@ -46,21 +46,8 @@ To follow along with this guide, you will need the following:
    ```
    For complete code refer to this link : [Aiven Python Kafka Producer](./kafka_producer_aiven.py)
 
-4. Set up a Kafka consumer to receive messages from your Kafka topic:
-   ```python
-   consumer = KafkaConsumer(
-       '<topic>',
-       bootstrap_servers='<service_uri>:<port>',
-       security_protocol='SSL',
-       ssl_cafile='/path/to/ca.pem',
-       ssl_certfile='/path/to/service.cert',
-       ssl_keyfile='/path/to/service.key',
-       group_id='<consumer_group_id>'
-   )
-
-   for message in consumer:
-       print(message.value.decode('utf-8'))
-   ```
+4. Consume Messages From Aiven UI in JSON format :
+   ![plot](./images/fetch_messages.png)
 
 ## Step 3: Set Up InfluxDB
 
