@@ -12,9 +12,9 @@ bootstrap_servers = 'kafka-30215ae9-fossouodonald-dd11.aivencloud.com:23761'
 topic = 'aiven_topic_dfp'
 
 # SSL certificate paths
-cafile = '/Users/marbofinance/Downloads/fledge-north-kafka-python-develop/test_clients/ca.pem'
-certfile = '/Users/marbofinance/Downloads/fledge-north-kafka-python-develop/test_clients/service.cert'
-keyfile = '/Users/marbofinance/Downloads/fledge-north-kafka-python-develop/test_clients/service.key'
+cafile = '/Users/marbofinance/Downloads/fledge-north-kafka-python-develop/test_clients/certs/ca.pem'
+certfile = '/Users/marbofinance/Downloads/fledge-north-kafka-python-develop/test_clients/certs/service.cert'
+keyfile = '/Users/marbofinance/Downloads/fledge-north-kafka-python-develop/test_clients/certs/service.key'
 
 # Kafka producer configuration
 producer = KafkaProducer(
