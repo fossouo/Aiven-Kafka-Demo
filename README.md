@@ -15,8 +15,10 @@ To follow along with this guide, you will need the following:
 ## Step 1: Set Up Aiven Kafka
 
 1. Access your Aiven console and navigate to your Kafka service.
+
 ![plot](./images/kafkaservice_homepage.png)
 2. Note down the connection details, including the **service URI**, **port**, **username**, and **password**. These will be required to connect to your Kafka cluster.
+
 ![plot](./images/download_certificates.png)
 
 ## Step 2: Produce Messages to Aiven Kafka (Local Setup) 
@@ -47,17 +49,21 @@ To follow along with this guide, you will need the following:
    For complete code refer to this link : [Aiven Python Kafka Producer](./kafka_producer_aiven.py)
 
 4. Consume Messages From Aiven UI in JSON format :
+
    ![plot](./images/fetch_messages.png)
 
 ## Step 3: Set Up InfluxDB
 
 1. Access your InfluxDB instance and create a new database for storing Kafka metrics.
+
 ![plot](./images/influxDBService_Running.png)
 
 2. Integration with Kafka to collect Metrics 
+
 ![plot](./images/LogIntegration_InfluxDB.png)
 
 3. Integration with Grafana to visualize the Metrics 
+
 ![plot](./images/LogIntegration_Grafana.png)
 
 4. Note down the connection details, including the **host**, **port**, **username**, **password**, and **database name**. 
@@ -86,14 +92,15 @@ To follow along with this guide, you will need the following:
 
 ## Step 5: Create Kafka Dashboards
 
-1. Click on "Create" in the side menu and select "Dashboard".
+1. Click on "Home Page" in the side menu and select "Dashboard".
 
-2. Click on "Add query" and select the InfluxDB data source you configured.
+2. Click on "Browse" and select the Kafka Aiven - Kafka Metrics.
 
-3. Write queries to retrieve Kafka metrics from InfluxDB. For example, to monitor the Kafka consumer lag, you can use the following query:
-   ```sql
-   SELECT "value" FROM "consumer_lag" WHERE "group_id" = '<consumer_group_id>'
-   ```
+![plot](./images/InfluxDB_Grafana_homepage.png)
+
+3. Validate and Create the Dashboard. 
+
+![plot](./images/InfluxDB_Grafana.png)
 
 4. Customize the dashboard by adding panels, visualizations, and additional queries as needed.
 
