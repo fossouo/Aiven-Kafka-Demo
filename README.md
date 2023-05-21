@@ -17,6 +17,7 @@ To follow along with this guide, you will need the following:
 1. Access your Aiven console and navigate to your Kafka service.
 
 ![plot](./images/kafkaservice_homepage.png)
+
 2. Note down the connection details, including the **service URI**, **port**, **username**, and **password**. These will be required to connect to your Kafka cluster.
 
 ![plot](./images/download_certificates.png)
@@ -70,25 +71,19 @@ To follow along with this guide, you will need the following:
 
 ## Step 4: Set Up Grafana for Observability
 
-1. Install Grafana following the official documentation for your platform.
+1. Install Grafana following the official documentation of Aiven.
 
 2. Access the Grafana web interface using your browser and log in with your credentials.
 
-3. Click on "Configuration" in the side menu and select "Data Sources".
+![plot](./images/GrafanaService_homepage.png)
 
-4. Click on "Add data source" and select "InfluxDB" from the list.
+3. Click on "Integrations" in the side menu and select "Receive Data".
 
-5. Configure the InfluxDB data source by providing the connection details:
-   - Name: Enter a name for the data source.
-   - URL: Enter the **host** and **port** of your InfluxDB instance.
-   - Database: Enter the **database name** you created for Kafka metrics in InfluxDB.
-   - User and
+![plot](./images/GrafanaService_InfluxDB_Integration.png)
 
- Password: Enter your InfluxDB credentials.
+4. When the Integration is complete you will see it in the default page.
 
-   ![Grafana Data Source](screenshots/grafana_influxdb_data_source.png)
-
-6. Click on "Save & Test" to verify the connection to your InfluxDB instance.
+![plot](./images/GrafanaService_Integrations.png)
 
 ## Step 5: Create Kafka Dashboards
 
