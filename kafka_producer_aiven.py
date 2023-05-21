@@ -5,6 +5,7 @@ import uuid
 from kafka import KafkaProducer
 from kafka.errors import KafkaError
 from kafka import KafkaAdminClient
+from datetime import datetime
 
 # Kafka broker configuration
 bootstrap_servers = 'kafka-30215ae9-fossouodonald-dd11.aivencloud.com:23761'
@@ -34,7 +35,7 @@ def generate_iot_data():
         'sensor_id': key,
         'temperature': round(random.uniform(20.0, 40.0), 2),
         'humidity': round(random.uniform(30.0, 80.0), 2),
-        'timestamp': int(time.time())
+        'timestamp': datetime.utcnow().isoformat()
     }
 
     return key, data
