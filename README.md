@@ -16,7 +16,8 @@ To follow along with this guide, you will need the following:
 
 1. Access your Aiven console and navigate to your Kafka service.
 ![plot](./images/kafkaservice_homepage.png)
-3. Note down the connection details, including the **service URI**, **port**, **username**, and **password**. These will be required to connect to your Kafka cluster.
+2. Note down the connection details, including the **service URI**, **port**, **username**, and **password**. These will be required to connect to your Kafka cluster.
+![plot](./images/download_certificates.png)
 
 ## Step 2: Connect to Aiven Kafka
 
