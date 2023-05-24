@@ -1,4 +1,3 @@
-Certainly! Here's an updated version of the blog-like article that includes the usage of InfluxDB with Grafana for Kafka metrics visualization:
 
 ## Introduction
 
